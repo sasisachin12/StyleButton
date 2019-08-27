@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="cusbutton">
+        <attr name="is_dot_border" format="boolean"/>
+    </declare-styleable>
+</resources>
