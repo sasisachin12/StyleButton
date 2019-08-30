@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="cusbutton">
-        <attr name="is_dot_border" format="boolean"/>
+    <declare-styleable name="dot_button_style">
+        <attr name="dot_border" format="boolean" />
+        <attr name="dot_color" format="color" />
+        <attr name="dot_width" format="dimension" />
+        <attr name="dot_thickness" format="dimension" />
+        <attr name="dot_gap_width" format="dimension" />
+        <attr name="dot_padding" format="dimension" />
     </declare-styleable>
 </resources>
