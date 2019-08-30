@@ -1,9 +1,12 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.github.dcendents.android-maven'
+
 
 android {
     compileSdkVersion 28
+    group='com.github.sasisachin12'
     defaultConfig {
         minSdkVersion 22
         targetSdkVersion 28
