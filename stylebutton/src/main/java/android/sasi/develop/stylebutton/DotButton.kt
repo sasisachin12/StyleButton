@@ -30,8 +30,12 @@ class DotButton : Button {
         val typedArray = context.obtainStyledAttributes(attrs, dot_button_style)
         val isBorder = typedArray.getBoolean(R.styleable.dot_button_style_dot_border, false)
         if (isBorder) {
+
             this.background = context.getDrawable(R.drawable.dot_border)
+
             val dotColor = typedArray.getColor(R.styleable.dot_button_style_dot_color, Color.BLUE)
+            val backGroundColor =
+                typedArray.getColor(R.styleable.dot_button_style_button_background, Color.YELLOW)
             val dotWidth =
                 typedArray.getDimensionPixelSize(R.styleable.dot_button_style_dot_width, 10)
             val dotPadding =
@@ -41,9 +45,10 @@ class DotButton : Button {
             val dotThickness =
                 typedArray.getDimensionPixelSize(R.styleable.dot_button_style_dot_thickness, 3)
             this.setPadding(dotPadding, dotPadding, dotPadding, dotPadding)
-            val backGround = this.background as GradientDrawable
+            val button = this.background as GradientDrawable
 
-            backGround.setStroke(dotThickness, dotColor, dotWidth.toFloat(), dotGapWidth.toFloat())
+            button.setStroke(dotThickness, dotColor, dotWidth.toFloat(), dotGapWidth.toFloat())
+            button.setColor(backGroundColor)
 
         }
         typedArray.recycle()
