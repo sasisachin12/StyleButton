@@ -5,6 +5,13 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
+
+    allprojects {
+        repositories {
+            jcenter()
+            maven { url "https://jitpack.io" }
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "android.sasi.develop.app"
