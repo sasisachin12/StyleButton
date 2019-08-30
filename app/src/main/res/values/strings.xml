@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CustomButton</string>
+    <string name="button_text">Am Dotted Border Button</string>
 </resources>
