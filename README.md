@@ -3,6 +3,15 @@ Custom styles Button
 
 This style button provided dash/dotted/line border of Button. 
 
+Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
    Use the following dependencies
 
 
