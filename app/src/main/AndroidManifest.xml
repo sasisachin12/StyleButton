@@ -12,6 +12,7 @@
             android:theme="@style/AppTheme"
             tools:replace="android:icon">
         <activity
+                android:exported="true"
                 android:name=".MainActivity"
                 android:theme="@style/Theme.AppCompat.Light">
             <intent-filter>
